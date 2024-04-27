@@ -22,7 +22,7 @@ for(i=0;i<r;i++){
     cout<<endl;
 }
 cout<<"OUTPUT MATRIX"<<endl;
-cout<<"TRANSPOSE OF OUTPUT MATRIX"<<endl;
+cout<<"TRANSPOSE OF INPUT MATRIX"<<endl;
  for(i=0;i<c;i++){
      for(j=0;j<r;j++){
          cout<<"  "<<a[j][i];
