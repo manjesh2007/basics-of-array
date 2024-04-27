@@ -1,31 +1,33 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 int main() {
-    int r,c;
-    printf("enter the number of row = ");
-    scanf("%d",&r);
-    printf("enter the number of collum = ");
-    scanf("%d",&c);
-    int  mk[r][c];
-    printf("enter the element\n");
-for(int i=0;i<r;i++){
-    for(int j=0;j<c;j++){
-    scanf("%d",&mk[i][j]);    
+int r,c;
+cout<<"ENTER NO OF ROW :";
+cin>>r;
+cout<<"ENTER NO OF COLLUM :";
+cin>>c;
+int a[r][c];
+int i,j;
+cout<<"ENTER MATRIX ELEMENT (row * collum) :";
+for(i=0;i<r;i++){
+    for(j=0;j<c;j++){
+        cin>>a[i][j];
     }
-    printf("\n");
 }
-printf(" your matrix\n");
-   for(int i=0;i<r;i++){
-       for(int j=0;j<c;j++){
-           printf("%d  ",mk[i][j]);
-       }
-       printf("\n");
-   }
-printf(" transpose matrix\n");
-   for(int i=0;i<r;i++){
-       for(int j=0;j<c;j++){
-           printf("%d  ",mk[j][i]);
-       }
-       printf("\n");
-   }
+cout<<"INPUT MATRIX"<<endl;
+for(i=0;i<r;i++){
+    for(j=0;j<c;j++){
+        cout<<"  "<<a[i][j];
+    }
+    cout<<endl;
+}
+cout<<"OUTPUT MATRIX"<<endl;
+cout<<"TRANSPOSE OF OUTPUT MATRIX"<<endl;
+ for(i=0;i<c;i++){
+     for(j=0;j<r;j++){
+         cout<<"  "<<a[j][i];
+     }
+     cout<<endl;
+ }
     return 0;
 }
